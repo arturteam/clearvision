@@ -1013,20 +1013,17 @@ grid-template-columns:1fr;
         max-width: 320px;
         margin: 0 auto;
     }
-}
-@media (max-width: 768px) {
-    .hero {
-        padding: 48px 0 64px;
-    }
-
+}@media (max-width: 768px) {
     .hero-layout {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 40px;
     }
 
     .hero-content {
-        text-align: center;
+        width: 100%;
         max-width: 100%;
+        text-align: center;
     }
 
     .hero h1 {
@@ -1045,5 +1042,11 @@ grid-template-columns:1fr;
     .hero-actions {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 }
