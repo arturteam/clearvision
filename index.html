@@ -11,6 +11,12 @@
 
     <title>Clear Vision Watch Faces</title>
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260725">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v=20260725">
+    <link rel="icon" href="favicon.ico?v=20260725">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260725">
+    <link rel="manifest" href="site.webmanifest?v=20260725">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,6 +25,7 @@
     >
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/collection.css">
 </head>
 
 <body>
@@ -37,6 +44,7 @@
         <nav class="nav-links" aria-label="Main navigation">
             <a href="#features">Features</a>
             <a href="#watch-faces">Watch Faces</a>
+            <a href="#collection">Coming Soon</a>
             <a href="#support">Support</a>
         </nav>
     </div>
@@ -237,6 +245,51 @@
 </div>
 
 </section>
+
+        <section class="section collection-section" id="collection">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Growing collection</p>
+                    <h2>More watch faces coming soon.</h2>
+                    <p>
+                        Clear Vision is just getting started. New high-contrast
+                        Wear OS watch faces will be added over time, with the same
+                        focus on readability, clean layouts and everyday usability.
+                    </p>
+                </div>
+
+                <div class="collection-grid">
+
+                    <article class="collection-card collection-card-current">
+                        <span class="collection-number">CV01</span>
+                        <h3>CV01 Essential</h3>
+                        <p>Coming soon on Google Play</p>
+                    </article>
+
+                    <article class="collection-card">
+                        <span class="collection-number">CV02</span>
+                        <h3>Next watch face</h3>
+                        <p>Coming soon</p>
+                    </article>
+
+                    <article class="collection-card">
+                        <span class="collection-number">CV03</span>
+                        <h3>More clarity</h3>
+                        <p>Coming soon</p>
+                    </article>
+
+                    <article class="collection-card collection-card-more">
+                        <span class="collection-number">+</span>
+                        <h3>More designs</h3>
+                        <p>Additional watch faces are in development.</p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
         <div class="container support-grid">
 
             <article class="support-card">
@@ -246,7 +299,7 @@
                     Step-by-step instructions for installing and configuring
                     Clear Vision watch faces on a Wear OS smartwatch.
                 </p>
-                <a href="#" class="text-link">Guide coming soon →</a>
+                <a href="guide.html" class="text-link">Open installation guide →</a>
             </article>
 
             <article class="support-card">
@@ -256,7 +309,7 @@
                     Find answers about compatibility, complications,
                     customization, installation and updates.
                 </p>
-                <a href="#" class="text-link">FAQ coming soon →</a>
+                <a href="faq.html" class="text-link">Open FAQ →</a>
             </article>
 
         </div>
@@ -270,8 +323,8 @@
             <h2>Get CV01 Essential</h2>
 
             <p>
-                Download the latest version directly from Google Play.
-                The application is free and optimized for Samsung Galaxy Watch devices running Wear OS.
+                CV01 Essential is currently being prepared for its public release on Google Play.
+                It will be available for compatible Wear OS smartwatches after publication.
             </p>
         </div>
 
@@ -281,7 +334,7 @@
             </div>
 
             <div>
-                <p class="eyebrow">AVAILABLE NOW</p>
+                <p class="eyebrow">COMING SOON</p>
 
                 <h2>CV01 Essential</h2>
 
@@ -289,12 +342,9 @@
                     A minimal, high-contrast watch face designed for maximum readability.
                 </p>
 
-                <a class="button button-primary" href="#"
-                   onclick="alert('Coming Soon
-
-CV01 Essential will be available on Google Play after the public release.'); return false;">
+                <button class="button button-primary" type="button" id="google-play-coming-soon">
                     Coming Soon on Google Play
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -309,7 +359,7 @@ CV01 Essential will be available on Google Play after the public release.'); ret
 
         <div class="footer-links">
             <a href="privacy.html">Privacy Policy</a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arturteam1@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
+            <a href="mailto:arturteam1@gmail.com">Contact</a>
         </div>
 
         <p class="copyright">

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Frequently asked questions about Clear Vision Wear OS watch faces."
+    >
+
+    <title>FAQ | Clear Vision Watch Faces</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260725">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v=20260725">
+    <link rel="icon" href="favicon.ico?v=20260725">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260725">
+    <link rel="manifest" href="site.webmanifest?v=20260725">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .faq-hero {
+            padding: 110px 0 70px;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .faq-item {
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.035);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 24px;
+            border: 0;
+            color: inherit;
+            background: transparent;
+            font: inherit;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .faq-icon {
+            flex: 0 0 auto;
+            font-size: 24px;
+            line-height: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 24px 22px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+
+        .faq-item.is-open .faq-answer {
+            display: block;
+        }
+
+        .faq-item.is-open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-back {
+            margin-top: 36px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container navigation">
+        <a class="brand" href="index.html#top" aria-label="Clear Vision home">
+            <img src="assets/images/logo.png" class="brand-logo" alt="Clear Vision Logo">
+
+            <span class="brand-name">
+                Clear Vision
+                <small>Watch Faces</small>
+            </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#watch-faces">Watch Faces</a>
+            <a href="index.html#support">Support</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="section faq-hero">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Help and answers</p>
+                <h1>Frequently asked questions</h1>
+                <p>
+                    Answers to the most common questions about installation,
+                    compatibility, complications and everyday use.
+                </p>
+            </div>
+
+            <div class="faq-list">
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Which smartwatches are supported?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Clear Vision watch faces are designed for smartwatches
+                            running Wear OS. Availability can depend on the watch
+                            model, Wear OS version and Google Play support.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Does CV01 Essential work on Samsung Galaxy Watch?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            CV01 Essential is intended for compatible Samsung
+                            Galaxy Watch models running Wear OS.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        How do I install the watch face?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Open the Installation Guide from the Support section
+                            and follow the step-by-step instructions for Google Play
+                            and your Wear OS watch.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Can I customize the complications?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Available complication areas can be configured
+                            directly from the watch-face customization menu.
+                            The options shown depend on the data providers
+                            installed on your watch.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Why is weather information not showing?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Open the watch-face customization menu and select an
+                            available weather provider for the relevant complication.
+                            Also check that location permissions and internet access
+                            are enabled for the selected provider.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Why is heart rate not showing?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Select a heart-rate provider in the complication
+                            settings and make sure the required health permissions
+                            are enabled on the watch.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Does the watch face support Always-On Display?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. CV01 Essential includes a simplified Always-On
+                            Display designed to preserve readability while reducing
+                            unnecessary screen activity.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        Is CV01 Essential free?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            CV01 Essential is planned as a free release on Google Play.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        What should I do if the watch face does not appear after installation?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Restart the watch, confirm that the installation was
+                            completed on the watch, and check the full watch-face list
+                            again. Also verify that the phone and watch use the same
+                            Google account.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="faq-back">
+                <a class="button button-secondary" href="index.html#support">
+                    ← Back to support
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div>
+            <strong>Clear Vision Watch Faces</strong>
+            <p>Designed for clarity.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:arturteam1@gmail.com">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © <span id="current-year">2026</span> Clear Vision Watch Faces
+        </p>
+
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+    const faqButtons = document.querySelectorAll(".faq-question");
+
+    faqButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const item = button.closest(".faq-item");
+            const isOpen = item.classList.toggle("is-open");
+
+            button.setAttribute("aria-expanded", String(isOpen));
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1050,3 +1050,46 @@ grid-template-columns:1fr;
         margin: 0 auto;
     }
 }
+/* UI Polish v1.1 - wklej na KONIEC assets/css/style.css */
+
+/* Features */
+.feature-grid{
+    gap:18px;
+}
+
+.feature-card{
+    min-height:200px !important;
+    padding:20px !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.feature-card h3{
+    margin:0 0 8px !important;
+    line-height:1.25;
+}
+
+.feature-card p{
+    margin:0;
+    line-height:1.55;
+}
+
+/* Mniejsze odstępy sekcji */
+.section{
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+.section-heading{
+    margin-bottom:30px;
+}
+
+.screenshots-section{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.support-section{
+    padding-top:60px;
+}
