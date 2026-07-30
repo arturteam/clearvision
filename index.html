@@ -3,400 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Clear Vision creates clean, high-contrast Wear OS watch faces designed for quick and comfortable reading."
-    >
-
+    <meta name="description" content="Clear Vision creates minimalist, high-contrast Wear OS watch faces designed for maximum readability and everyday comfort.">
     <title>Clear Vision Watch Faces</title>
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260725">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v=20260725">
-    <link rel="icon" href="favicon.ico?v=20260725">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260725">
-    <link rel="manifest" href="site.webmanifest?v=20260725">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260729">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v=20260729">
+    <link rel="icon" href="favicon.ico?v=20260729">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260729">
+    <link rel="manifest" href="site.webmanifest?v=20260729">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/collection.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260730-hero-banner-final">
 </head>
-
 <body>
-
 <header class="site-header">
     <div class="container navigation">
         <a class="brand" href="#top" aria-label="Clear Vision home">
-            <img src="assets/images/logo.png" class="brand-logo" alt="Clear Vision Logo">
-
-            <span class="brand-name">
-                Clear Vision
-                <small>Watch Faces</small>
-            </span>
+            <img src="assets/images/logo.png" class="brand-logo" alt="Clear Vision logo">
+            <span class="brand-name">Clear Vision<small>Watch Faces</small></span>
         </a>
 
         <nav class="nav-links" aria-label="Main navigation">
-            <a href="#features">Features</a>
             <a href="#watch-faces">Watch Faces</a>
-            <a href="#collection">Coming Soon</a>
+            <a href="#features">Why Clear Vision</a>
+            <a href="#screenshots">Gallery</a>
             <a href="#support">Support</a>
         </nav>
     </div>
 </header>
 
 <main id="top">
+    <section class="hero-banner" aria-label="Clear Vision Wear OS watch face collection">
+        <img
+            src="assets/images/hero-banner.jpg"
+            alt="Clear Vision Watch Faces – minimalist high-contrast watch faces for Wear OS"
+            width="1920"
+            height="1080"
+            fetchpriority="high">
+    </section>
 
-    <section class="hero">
-        <div class="hero-glow hero-glow-one"></div>
-        <div class="hero-glow hero-glow-two"></div>
+    <section class="section product-section" id="watch-faces">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Watch face collection</p>
+                <h2>Choose your Clear Vision.</h2>
+                <p>A growing collection of practical Wear OS watch faces built around readability, clean layouts and useful information.</p>
+            </div>
 
-        <div class="container hero-layout">
+            <div class="products-grid">
+                <article class="watch-card">
+                    <div class="watch-card-image">
+                        <img src="assets/images/cv01-card.png" alt="CV01 Essential">
+                    </div>
+                    <div class="watch-card-content">
+                        <div class="watch-card-meta">
+                            <span class="product-label">CV01</span>
+                            <span class="status-badge">Coming soon</span>
+                        </div>
+                        <h3>CV01 Essential</h3>
+                        <p>Large digital time with essential daily information and customizable complications.</p>
+                        <ul class="product-features">
+                            <li>Large digital clock</li>
+                            <li>Date and weather</li>
+                            <li>Steps, heart rate and battery</li>
+                            <li>Editable complications</li>
+                            <li>Always-On Display</li>
+                        </ul>
+                        <span class="button button-secondary card-button button-disabled" aria-disabled="true">Google Play · Coming soon</span>
+                    </div>
+                </article>
 
-            <div class="hero-content">
-                <p class="eyebrow">Premium Wear OS watch faces</p>
+                <article class="watch-card watch-card-featured">
+                    <div class="watch-card-image">
+                        <img src="assets/images/cv02-card.png" alt="CV02 Split Max">
+                    </div>
+                    <div class="watch-card-content">
+                        <div class="watch-card-meta">
+                            <span class="product-label">CV02</span>
+                            <span class="status-badge">Coming soon</span>
+                        </div>
+                        <h3>CV02 Split Max</h3>
+                        <p>An extra-large clock paired with five clear information panels in a distinctive split layout.</p>
+                        <ul class="product-features">
+                            <li>Extra-large digital clock</li>
+                            <li>Split information layout</li>
+                            <li>Five information panels</li>
+                            <li>Editable complications</li>
+                            <li>High-contrast AOD</li>
+                        </ul>
+                        <a class="button button-primary card-button" href="#cv02">Discover CV02</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-                <h1>
-                    Time you
-                    <span>can see.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Clean, high-contrast watch faces designed to show
-                    the most important information clearly and immediately.
+    <section class="section cv02-section" id="cv02">
+        <div class="container cv02-layout">
+            <div class="cv02-feature-image">
+                <img src="assets/images/cv02-feature.png" alt="CV02 Split Max promotional graphic">
+            </div>
+            <div class="cv02-copy">
+                <p class="eyebrow">New release</p>
+                <h2>CV02 Split Max</h2>
+                <p class="cv02-lead">Maximum readability with a large digital clock and five customizable information panels.</p>
+                <p>
+                    CV02 Split Max is designed for users who want more useful information without sacrificing clarity.
+                    The divided layout keeps the time dominant while placing key data in one easy-to-scan column.
                 </p>
-
-                <div class="hero-actions">
-                    <a class="button button-primary" href="#watch-faces">
-                        Explore watch faces
-                    </a>
-
-                    <a class="button button-secondary" href="#support">
-                        Installation guide
-                    </a>
-                </div>
-
-                <div class="hero-points">
-                    <span>Large digits</span>
+                <div class="feature-chips">
+                    <span>Large clock</span>
+                    <span>5 info panels</span>
+                    <span>Editable complications</span>
                     <span>High contrast</span>
-                    <span>Wear OS</span>
+                    <span>AOD ready</span>
                 </div>
             </div>
-
-            <div class="hero-visual">
-                <div class="logo-frame">
-                    <div class="logo-light"></div>
-
-                    <img
-                        src="assets/images/hero-logo.png"
-                        alt="Clear Vision logo"
-                    >
-                </div>
-            </div>
-
         </div>
     </section>
 
     <section class="section" id="features">
         <div class="container">
-
             <div class="section-heading">
-                <p class="eyebrow">Designed for clarity</p>
-
+                <p class="eyebrow">Why Clear Vision</p>
                 <h2>Everything important at a glance.</h2>
-
-                <p>
-                    Clear Vision removes unnecessary visual noise and keeps
-                    the information you use most easy to find.
-                </p>
+                <p>Every layout is built to reduce visual noise and make everyday information easier to find.</p>
             </div>
 
             <div class="feature-grid">
-
-                <article class="feature-card">
-                   
-                    <h3>Large readable time</h3>
-                    <p>
-                        Prominent digits make the time easier to read quickly,
-                        including while moving.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                   
-                    <h3>High contrast</h3>
-                    <p>
-                        Carefully selected colors improve separation between
-                        the background and essential information.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                   
-                    <h3>Clean layouts</h3>
-                    <p>
-                        Each element has a clear purpose, without decorative
-                        clutter or unnecessary distractions.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    
-                    <h3>Clear Always-On Display</h3>
-                    <p>
-                        Simplified AOD layouts retain legibility while helping
-                        reduce unnecessary screen activity.
-                    </p>
-                </article>
-
+                <article class="feature-card"><h3>Maximum readability</h3><p>Large typography and deliberate spacing make the time quick and comfortable to read.</p></article>
+                <article class="feature-card"><h3>High contrast</h3><p>Clear separation between the background and essential information improves legibility.</p></article>
+                <article class="feature-card"><h3>Practical information</h3><p>Weather, battery, health and activity data stay accessible without cluttering the layout.</p></article>
+                <article class="feature-card"><h3>Made for Wear OS</h3><p>Designed for compatible Wear OS smartwatches with a clear and efficient Always-On Display.</p></article>
             </div>
         </div>
     </section>
 
-    <section class="section product-section" id="watch-faces">
+    <section class="section screenshots-section" id="screenshots">
         <div class="container">
-
             <div class="section-heading">
-                <p class="eyebrow">Watch face collection</p>
-                <h2>Clear Vision products</h2>
-                <p>
-                    A growing collection of practical Wear OS watch faces
-                    built around readability and simplicity.
-                </p>
+                <p class="eyebrow">Watch face gallery</p>
+                <h2>Explore the Clear Vision collection.</h2>
+                <p>See both CV01 Essential and CV02 Split Max, including active layouts, complication areas and Always-On Display.</p>
             </div>
 
-            <article class="product-card">
-
-                <div class="product-image">
-    <img src="assets/images/cv01.png" alt="CV01 Essential">
-</div>
-
-                <div class="product-content">
-                    <p class="product-label">First release</p>
-
-                    <h3>CV01 Essential</h3>
-
-                    <p>
-                        A clean digital watch face with large time,
-                        date, battery, steps, heart rate and weather
-                        information.
-                    </p>
-
-                    <ul class="product-features">
-                        <li>Large digital time</li>
-                        <li>Customizable complications</li>
-                        <li>High-contrast design</li>
-                        <li>Always-On Display</li>
-                    </ul>
-
-                    <span class="status-badge">Google Play — coming soon</span>
+            <div class="gallery-group">
+                <div class="gallery-group-heading">
+                    <span class="product-label">CV01</span>
+                    <h3>Essential</h3>
                 </div>
+<div class="screenshots-grid">
+                    <button class="screenshot-card screenshot-card-wide" type="button">
+                        <img src="assets/images/cv01-feature.png" alt="CV01 Essential promotional graphic">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv01-main.png" alt="CV01 Essential main watch face">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv01-aod.png" alt="CV01 Essential Always-On Display">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv01-detail.png" alt="CV01 Essential alternate watch face">
+                    </button>
+                </div>
+            </div>
 
-            </article>
+            <div class="gallery-group">
+                <div class="gallery-group-heading">
+                    <span class="product-label">CV02</span>
+                    <h3>Split Max</h3>
+                </div>
+               <div class="screenshots-grid">
+                    <button class="screenshot-card screenshot-card-wide" type="button">
+                        <img src="assets/images/cv02-feature.png" alt="CV02 Split Max promotional graphic">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv02-main.png" alt="CV02 Split Max main watch face">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv02-aod.png" alt="CV02 Split Max Always-On Display">
+                    </button>
+                    <button class="screenshot-card" type="button">
+                        <img src="assets/images/cv02-detail.png" alt="CV02 Split Max detailed watch face">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section collection-section" id="collection">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Growing collection</p>
+                <h2>Two watch faces. More on the way.</h2>
+                <p>Clear Vision continues to grow with new high-contrast designs built around the same core principles.</p>
+            </div>
+            <div class="collection-grid">
+                <article class="collection-card collection-card-current"><span class="collection-number">CV01</span><h3>Essential</h3><p>Coming soon to Google Play</p></article>
+                <article class="collection-card collection-card-current"><span class="collection-number">CV02</span><h3>Split Max</h3><p>New release · coming soon</p></article>
+                <article class="collection-card"><span class="collection-number">NEXT</span><h3>More clarity</h3><p>Another Clear Vision design is in development.</p></article>
+                <article class="collection-card collection-card-more"><span class="collection-number">+</span><h3>Growing series</h3><p>Additional Wear OS watch faces will follow.</p></article>
+            </div>
         </div>
     </section>
 
     <section class="section support-section" id="support">
-        <section class="section screenshots-section" id="screenshots">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                Screenshots
-            </p>
-
-            <h2>
-                See CV01 in action.
-            </h2>
-
-            <p>
-                A closer look at the Clear Vision watch face.
-            </p>
-
-        </div>
-
-       
-
-<div class="screenshots-grid">
-
-    <button class="screenshot-card" type="button">
-        <img src="assets/images/screen1.png" alt="CV01 Essential main layout">
-    </button>
-
-    <button class="screenshot-card" type="button">
-        <img src="assets/images/screen2.png" alt="CV01 Essential alternate layout">
-    </button>
-
-    <button class="screenshot-card" type="button">
-        <img src="assets/images/screen3.png" alt="CV01 Essential on smartwatch">
-    </button>
-
-    <button class="screenshot-card" type="button">
-        <img src="assets/images/screen4.png" alt="CV01 Essential Always-On Display">
-    </button>
-
-</div>
-
-</section>
-
-        <section class="section collection-section" id="collection">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">Growing collection</p>
-                    <h2>More watch faces coming soon.</h2>
-                    <p>
-                        Clear Vision is just getting started. New high-contrast
-                        Wear OS watch faces will be added over time, with the same
-                        focus on readability, clean layouts and everyday usability.
-                    </p>
-                </div>
-
-                <div class="collection-grid">
-
-                    <article class="collection-card collection-card-current">
-                        <span class="collection-number">CV01</span>
-                        <h3>CV01 Essential</h3>
-                        <p>Coming soon on Google Play</p>
-                    </article>
-
-                    <article class="collection-card">
-                        <span class="collection-number">CV02</span>
-                        <h3>Next watch face</h3>
-                        <p>Coming soon</p>
-                    </article>
-
-                    <article class="collection-card">
-                        <span class="collection-number">CV03</span>
-                        <h3>More clarity</h3>
-                        <p>Coming soon</p>
-                    </article>
-
-                    <article class="collection-card collection-card-more">
-                        <span class="collection-number">+</span>
-                        <h3>More designs</h3>
-                        <p>Additional watch faces are in development.</p>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
         <div class="container support-grid">
-
-            <article class="support-card">
-                <p class="eyebrow">Getting started</p>
-                <h2>Installation guide</h2>
-                <p>
-                    Step-by-step instructions for installing and configuring
-                    Clear Vision watch faces on a Wear OS smartwatch.
-                </p>
-                <a href="guide.html" class="text-link">Open installation guide →</a>
-            </article>
-
-            <article class="support-card">
-                <p class="eyebrow">Help and answers</p>
-                <h2>FAQ</h2>
-                <p>
-                    Find answers about compatibility, complications,
-                    customization, installation and updates.
-                </p>
-                <a href="faq.html" class="text-link">Open FAQ →</a>
-            </article>
-
+            <article class="support-card"><p class="eyebrow">Getting started</p><h2>Installation guide</h2><p>Step-by-step instructions for installing and configuring Clear Vision watch faces on a Wear OS smartwatch.</p><a href="guide.html" class="text-link">Open installation guide →</a></article>
+            <article class="support-card"><p class="eyebrow">Help and answers</p><h2>FAQ</h2><p>Find answers about compatibility, complications, customization, installation and updates.</p><a href="faq.html" class="text-link">Open FAQ →</a></article>
         </div>
     </section>
-
 </main>
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <p class="eyebrow">DOWNLOAD</p>
-            <h2>Get CV01 Essential</h2>
 
-            <p>
-                CV01 Essential is currently being prepared for its public release on Google Play.
-                It will be available for compatible Wear OS smartwatches after publication.
-            </p>
-        </div>
-
-        <div class="product-card">
-            <div>
-                <img src="assets/images/cv01.png" alt="CV01 Essential">
-            </div>
-
-            <div>
-                <p class="eyebrow">COMING SOON</p>
-
-                <h2>CV01 Essential</h2>
-
-                <p>
-                    A minimal, high-contrast watch face designed for maximum readability.
-                </p>
-
-                <button class="button button-primary" type="button" id="google-play-coming-soon">
-                    Coming Soon on Google Play
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
 <footer class="site-footer">
     <div class="container footer-layout">
-
-        <div>
-            <strong>Clear Vision Watch Faces</strong>
-            <p>Designed for clarity.</p>
-        </div>
-
+        <div><strong>Clear Vision Watch Faces</strong><p>Designed for clarity.</p></div>
         <div class="footer-links">
+            <a href="https://play.google.com/store/apps/dev?id=8502917489499571293&amp;hl=en-US" target="_blank" rel="noopener">Google Play</a>
             <a href="privacy.html">Privacy Policy</a>
             <a href="mailto:arturteam1@gmail.com">Contact</a>
         </div>
-
-        <p class="copyright">
-            © <span id="current-year">2026</span> Clear Vision Watch Faces
-        </p>
-
+        <p class="copyright">© <span id="current-year">2026</span> Clear Vision Watch Faces</p>
     </div>
 </footer>
 
 <div class="image-modal" id="image-modal" aria-hidden="true">
-    <button
-        class="image-modal-close"
-        type="button"
-        aria-label="Close image"
-    >
-        ×
-    </button>
-
-    <button
-        class="image-modal-arrow image-modal-prev"
-        type="button"
-        aria-label="Previous image"
-    >
-        ‹
-    </button>
-
+    <button class="image-modal-close" type="button" aria-label="Close image">×</button>
+    <button class="image-modal-arrow image-modal-prev" type="button" aria-label="Previous image">‹</button>
     <img id="modal-image" src="" alt="">
-
-    <button
-        class="image-modal-arrow image-modal-next"
-        type="button"
-        aria-label="Next image"
-    >
-        ›
-    </button>
+    <button class="image-modal-arrow image-modal-next" type="button" aria-label="Next image">›</button>
 </div>
-<script src="assets/js/script.js"></script>
 
+<script src="assets/js/script.js?v=20260730-no-overlays"></script>
 </body>
 </html>
