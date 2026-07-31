@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arturteam.github.io/clearvision/sitemap.xml

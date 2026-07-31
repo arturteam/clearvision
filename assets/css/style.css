@@ -262,3 +262,26 @@ button { font: inherit; }
     height: auto;
   }
 }
+
+
+/* =========================================================
+   CV02 PROMOTIONAL IMAGE — KEEP ORIGINAL PROPORTIONS
+========================================================= */
+.cv02-feature-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.cv02-feature-image img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  aspect-ratio: 1639 / 891;
+  object-fit: contain !important;
+  object-position: center;
+  flex: 0 0 auto;
+}
