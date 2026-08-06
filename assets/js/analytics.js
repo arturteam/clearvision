@@ -4,6 +4,24 @@
     const MEASUREMENT_ID = "G-JRSDRDMQYS";
     const CONSENT_STORAGE_KEY = "clear_vision_analytics_consent";
     const CONSENT_LIFETIME_MS = 180 * 24 * 60 * 60 * 1000;
+    const isPolish = document.documentElement.lang.toLowerCase().startsWith("pl");
+    const copy = isPolish ? {
+        eyebrow: "Ustawienia prywatności",
+        title: "Pomóż nam ulepszać Clear Vision",
+        description: "Za Twoją zgodą używamy Google Analytics, aby mierzyć odwiedziny strony oraz kliknięcia prowadzące do Google Play.",
+        details: "Szczegóły prywatności",
+        accept: "Akceptuję statystyki",
+        reject: "Odrzuć",
+        settings: "Ustawienia plików cookie"
+    } : {
+        eyebrow: "Privacy choices",
+        title: "Help us improve Clear Vision",
+        description: "With your permission, we use Google Analytics to understand website visits and clicks leading to Google Play.",
+        details: "Privacy details",
+        accept: "Accept analytics",
+        reject: "Reject",
+        settings: "Cookie settings"
+    };
 
     let analyticsLoaded = false;
     let banner;
@@ -133,20 +151,17 @@
         banner.innerHTML = `
             <div class="consent-banner__content">
                 <div class="consent-banner__copy">
-                    <p class="consent-banner__eyebrow">Privacy choices · Ustawienia prywatności</p>
-                    <h2 id="consent-title">Help us improve Clear Vision</h2>
-                    <p id="consent-description">
-                        With your permission, we use Google Analytics to understand visits and clicks leading to Google Play.
-                        Za Twoją zgodą używamy Google Analytics, aby mierzyć odwiedziny i kliknięcia prowadzące do Google Play.
-                    </p>
-                    <a href="privacy.html#website-analytics">Privacy details · Szczegóły prywatności</a>
+                    <p class="consent-banner__eyebrow">${copy.eyebrow}</p>
+                    <h2 id="consent-title">${copy.title}</h2>
+                    <p id="consent-description">${copy.description}</p>
+                    <a href="privacy.html#website-analytics">${copy.details}</a>
                 </div>
                 <div class="consent-banner__actions">
                     <button class="consent-button consent-button--primary" type="button" data-consent-accept>
-                        Accept analytics · Akceptuję
+                        ${copy.accept}
                     </button>
                     <button class="consent-button consent-button--secondary" type="button" data-consent-reject>
-                        Reject · Odrzuć
+                        ${copy.reject}
                     </button>
                 </div>
             </div>`;
@@ -163,11 +178,12 @@
             button.className = "footer-consent-link";
             button.type = "button";
             button.dataset.consentSettings = "true";
-            button.textContent = "Cookie settings";
+            button.textContent = copy.settings;
             footerLinks.appendChild(button);
         });
 
         document.querySelectorAll("[data-consent-settings]").forEach((button) => {
+            button.textContent = copy.settings;
             button.addEventListener("click", openBanner);
         });
     };

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://arturteam.github.io/clearvision/</loc><lastmod>2026-07-30</lastmod><priority>1.0</priority></url>
-  <url><loc>https://arturteam.github.io/clearvision/guide.html</loc><lastmod>2026-07-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arturteam.github.io/clearvision/faq.html</loc><lastmod>2026-07-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arturteam.github.io/clearvision/privacy.html</loc><lastmod>2026-07-30</lastmod><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://arturteam.github.io/clearvision/</loc><lastmod>2026-08-06</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://arturteam.github.io/clearvision/"/><xhtml:link rel="alternate" hreflang="pl" href="https://arturteam.github.io/clearvision/pl/"/><priority>1.0</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/pl/</loc><lastmod>2026-08-06</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://arturteam.github.io/clearvision/"/><xhtml:link rel="alternate" hreflang="pl" href="https://arturteam.github.io/clearvision/pl/"/><priority>1.0</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/guide.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="pl" href="https://arturteam.github.io/clearvision/pl/guide.html"/><priority>0.7</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/pl/guide.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://arturteam.github.io/clearvision/guide.html"/><priority>0.7</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/faq.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="pl" href="https://arturteam.github.io/clearvision/pl/faq.html"/><priority>0.7</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/pl/faq.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://arturteam.github.io/clearvision/faq.html"/><priority>0.7</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/privacy.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="pl" href="https://arturteam.github.io/clearvision/pl/privacy.html"/><priority>0.3</priority></url>
+  <url><loc>https://arturteam.github.io/clearvision/pl/privacy.html</loc><lastmod>2026-08-05</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://arturteam.github.io/clearvision/privacy.html"/><priority>0.3</priority></url>
 </urlset>

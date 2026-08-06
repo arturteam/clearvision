@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = document.getElementById("current-year");
     if (year) year.textContent = String(new Date().getFullYear());
 
+    document.querySelectorAll("[data-language]").forEach((link) => {
+        link.addEventListener("click", () => localStorage.setItem("clearVisionLanguage", link.dataset.language));
+    });
+
     const cards = Array.from(document.querySelectorAll(".screenshot-card"));
     const modal = document.getElementById("image-modal");
     const modalImage = document.getElementById("modal-image");
