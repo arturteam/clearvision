@@ -74,7 +74,7 @@ button { font: inherit; }
 .section-heading > p:last-child, .support-card > p, .cv02-copy > p { color: var(--gray); font-size: 17px; }
 
 .product-section { border-block: 1px solid var(--border); background: rgba(255,255,255,.015); }
-.products-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; }
+.products-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
 .watch-card { position: relative; overflow: hidden; display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--border); border-radius: 30px; background: linear-gradient(145deg,#151922,#0d0f14); }
 .watch-card-featured { border-color: rgba(93,149,255,.45); box-shadow: 0 28px 80px rgba(31,107,255,.12); }
 .watch-card-image { min-height: 430px; display: grid; place-items: center; padding: 34px; background: radial-gradient(circle,rgba(31,107,255,.15),transparent 58%); }
@@ -106,7 +106,7 @@ button { font: inherit; }
 .cv02-layout { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
 .cv02-feature-image { overflow: hidden; border: 1px solid rgba(93,149,255,.3); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.42); }
 .cv02-feature-image img { width: 100%; }
-#cv03 .cv02-feature-image img { aspect-ratio: auto; object-fit: contain !important; }
+#cv03 .cv02-feature-image img, #cv04 .cv02-feature-image img { aspect-ratio: auto; object-fit: contain !important; }
 .cv02-lead { color: var(--white) !important; font-size: 21px !important; font-weight: 600; }
 .feature-chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 28px; }
 
@@ -176,7 +176,7 @@ button { font: inherit; }
 .button-disabled { opacity: .65; cursor: default; pointer-events: none; }
 .button-disabled:hover { transform: none; }
 
-.collection-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }
+.collection-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); gap: 18px; }
 .collection-card { min-height: 170px; padding: 24px; display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 20px; background: rgba(255,255,255,.035); transition: .25s ease; }
 .collection-card:hover { transform: translateY(-4px); border-color: var(--blue); background: rgba(255,255,255,.055); }
 .collection-card-current { border-color: rgba(79,140,255,.58); }
@@ -207,6 +207,7 @@ button { font: inherit; }
 .image-modal-arrow { top: 50%; width: 52px; height: 70px; border-radius: 14px; font-size: 38px; transform: translateY(-50%); }
 .image-modal-prev { left: 24px; }
 .image-modal-next { right: 24px; }
+
 
 @media (max-width: 980px) {
   .hero-layout, .cv02-layout { grid-template-columns: 1fr; }
