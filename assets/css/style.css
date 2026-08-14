@@ -306,3 +306,9 @@ button { font: inherit; }
   object-position: center;
   flex: 0 0 auto;
 }
+
+
+.cv01-play-button {
+    margin-top: 1.25rem;
+    width: fit-content;
+}
