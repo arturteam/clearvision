@@ -106,7 +106,7 @@ button { font: inherit; }
 .cv02-layout { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
 .cv02-feature-image { overflow: hidden; border: 1px solid rgba(93,149,255,.3); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.42); }
 .cv02-feature-image img { width: 100%; }
-#cv03 .cv02-feature-image img, #cv04 .cv02-feature-image img { aspect-ratio: auto; object-fit: contain !important; }
+#cv03 .cv02-feature-image img, #cv04 .cv02-feature-image img, #cv05 .cv02-feature-image img { aspect-ratio: auto; object-fit: contain !important; }
 .cv02-lead { color: var(--white) !important; font-size: 21px !important; font-weight: 600; }
 .feature-chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 28px; }
 
