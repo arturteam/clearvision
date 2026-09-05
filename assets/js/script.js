@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!image) return;
         modalImage.src = image.src;
         modalImage.alt = image.alt;
+
+        const sourceWidth = Number(image.getAttribute("width")) || image.naturalWidth || 0;
+        const sourceHeight = Number(image.getAttribute("height")) || image.naturalHeight || 0;
+        const isWide = sourceWidth > 0 && sourceHeight > 0 && (sourceWidth / sourceHeight) >= 1.45;
+        modalImage.classList.toggle("is-wide", isWide);
     };
 
     const openModal = (index) => {
