@@ -316,3 +316,21 @@ button { font: inherit; }
     margin-top: 1.25rem;
     width: fit-content;
 }
+
+/* WearOSFaces badge */
+.wearosfaces-badge {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 16px 16px 16px 0;
+    line-height: 0;
+}
+.wearosfaces-badge img {
+    display: block;
+    width: 203px;
+    height: auto;
+    max-width: 100%;
+}
+.wearosfaces-badge:hover {
+    opacity: .88;
+}
