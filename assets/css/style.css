@@ -121,6 +121,7 @@ button { font: inherit; }
 .watch-card-meta { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
 .product-label { margin: 0; color: var(--blue-light); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .status-badge { display: inline-flex; padding: 8px 12px; border: 1px solid rgba(93,149,255,.34); border-radius: 100px; color: var(--blue-light); font-size: 11px; font-weight: 700; }
+.status-badge-sale { border-color: rgba(255,184,77,.55); background: rgba(255,153,0,.12); color: #ffc15a; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .watch-card h3 { margin: 18px 0 0; font-size: clamp(35px,4vw,52px); line-height: 1; letter-spacing: -.035em; }
 .watch-card-content > p { color: var(--gray); font-size: 16px; }
 .product-features { display: grid; grid-template-columns: repeat(2,1fr); gap: 11px 22px; margin: 23px 0 30px; padding: 0; list-style: none; }
