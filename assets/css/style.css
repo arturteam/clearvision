@@ -90,6 +90,24 @@ button { font: inherit; }
   transition: .3s ease;
 }
 .watch-card:hover .watch-card-image img { transform: scale(1.035); }
+.watch-card-gallery-link {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.watch-card-gallery-link:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 6px;
+  border-radius: 18px;
+}
+.watch-card-gallery-link:hover img {
+  transform: scale(1.035);
+}
+
 /* Product cards now use the wide promotional graphic so the product
    presentation lives in one place instead of being repeated below. */
 .watch-card-image img.product-feature-image {
