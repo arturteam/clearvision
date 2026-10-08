@@ -1,0 +1,78 @@
+2026-10-08 — Pełne opisy i galerie po 8 zdjęć
+- Dodano osobne podstrony wszystkich 7 tarcz w PL i EN, z funkcjami, personalizacją, FAQ, AOD i pomocą.
+- Opisy CV01–CV05 sprawdzono w Google Play; CV06 i CV07 opracowano z tekstów właściciela.
+- CV06: 6 edytowalnych komplikacji + 2 edytowalne paski postępu; CV07 Glow: 6 edytowalnych komplikacji.
+- Każda galeria w PL i EN oraz na podstronach zawiera dokładnie 8 zdjęć.
+- Dodano grafiki PL/EN personalizacji kolorów CV01–CV03 oraz oznaczeń komplikacji CV06/CV07, na bazie oryginalnych screenów (1254 × 1254 px).
+- Dodano linki „Poznaj tarczę” i odpowiadające im linki EN, canonicale i hreflang nowych podstron oraz wpisy sitemap.
+- Zachowano status „wkrótce” dla CV06 i CV07, promocję, instrukcję realizacji kodów, Phone Battery, analytics i istniejące linki sklepu.
+- Kontrola: brak brakujących lokalnych plików i kotwic, po 8 różnych grafik w każdej galerii, 14 poprawnych podstron PL/EN, poprawny sitemap i składnia JS. Pełny test renderowania w przeglądarce nie był dostępny w środowisku.
+- Katalog .git zachowano bez zmian. Nowe pliki robocze i zrzuty testowe nie są dołączone.
+
+2026-10-08 — Instrukcja realizacji kodów Google Play
+- Dodano instrukcję krok po kroku w Guide PL i EN: realizacja kodu, konto Google, instalacja tarczy na zegarku i pomoc przy błędach.
+- Dodano odnośnik z sekcji promocji oraz linki do oficjalnej pomocy Google Play.
+- Zachowano status „wkrótce” CV06 Side i CV07 Glow oraz wszystkie pozostałe elementy projektu.
+
+AKTUALNY STATUS 2026-10-07: CV06 Side i CV07 Glow — Wkrótce dostępna w Google Play / Coming soon on Google Play.
+Zmieniono kartę CV06, mały kafelek kolekcji i zapowiedź promocji PL/EN. Bez deklarowanej daty premiery.
+Poniższe starsze wpisy stanowią historię zmian.
+
+AKTUALIZACJA: nazwa CV07 Glow w PL/EN (karty, galeria, kolekcja, promocja, e-mail, opisy i SEO).
+Sprawdzono: polska strona otwiera polski temat i treść e-maila, angielska — angielskie.
+
+Dodatkowa poprawka: usunięto podwójną naklejkę Follow me oraz powtórzony link Google Play w polskiej stopce.
+
+AKTUALIZACJA 2026-10-07 — MENU I ZGŁOSZENIA
+- Usunięto nieaktualny rabat 50% CV03 z galerii PL/EN.
+- Menu: Promocja 1+1 / BOGO oraz Phone Battery; odnośniki do osobnych sekcji.
+- Linki e-mail w promocji otwierają temat i gotową treść PL/EN z polami wyboru
+  kupionej i darmowej tarczy oraz przypomnieniem o załączeniu dowodu zakupu.
+- Usunięto mały link nad instrukcją instalacji tarczy. Sekcja Phone Battery
+  ma teraz duży nagłówek Instalacja Phone Battery Complication / Install Phone Battery Complication.
+- Menu zawija się także na małych ekranach.
+- Zmiany zweryfikowano statycznie; brak testu renderowania w przeglądarce.
+
+Clear Vision Watch Faces — 2026-10-07
+
+ZMIANY
+- CV07 na stronie głównej i w galerii PL/EN; karta według wzorca CV06.
+- 10 finalnych grafik CV07, wszystkie 1254 x 1254 px, z kopertą zegarka.
+  Widok główny i AOD używają koperty CV06; warianty używają jego kadru zbliżenia.
+  Karta wykorzystuje dostarczony Front z odpowiadającą kopertą i oznaczeniem CV07.
+- Kolejność galerii: active, AOD, personalizacja komplikacji, jasny glow,
+  neutralny, czerwony, niebieski, zielony, żółty. Bez fikcyjnej planszy czcionek.
+- Kolekcja zaktualizowana do 7 tarcz, opisy i dane SEO PL/EN.
+- Osobna promocja po hero: 4 kroki, 1 zakup = 1 kod = 1 wybrana tarcza
+  CV02/CV03/CV05; obsługa ręczna przez arturteam1@gmail.com.
+- Ogólna sekcja Phone Battery Complication, 14 kroków konfiguracji w Guide,
+  FAQ i odnośnik w Support, komplet PL/EN.
+- Oficjalny pakiet Phone Battery: com.weartools.phonebattcomp.
+- CV06 oznaczona jako dostępna zgodnie z informacją właściciela.
+  Link produkcyjny zostanie dostarczony później; przycisk nadal otwiera galerię.
+  CV07 ma status Wkrótce / Coming soon, bez wymyślonego linku Google Play.
+- Zachowane istniejące grafiki i galerie CV01–CV06, linki CV01–CV05,
+  analytics, favicony, manifest, robots.txt, canonicale i adresy w sitemap.
+  Zaktualizowano daty sitemap dla zmienionych stron.
+- Cały oryginalny katalog .git pozostaje w ZIP-ie bez zmian. Nie utworzono repozytorium.
+
+KONTROLA
+- Sprawdzone lokalne ścieżki plików i kotwice we wszystkich stronach HTML.
+- Sprawdzone odnośniki językowe, adres e-mail i struktury JSON-LD.
+- Sprawdzona składnia JavaScript; kod analytics i galerii zachowany.
+- Zweryfikowane oficjalne strony Google Play CV01–CV05 i Phone Battery.
+- Grafiki obejrzane osobno i jako miniatury obok CV06.
+- Oryginalne breakpointy responsywne zachowane; nowe sekcje wykorzystują
+  istniejącą siatkę 4/2/1 kolumn oraz zawijanie przycisków na małych ekranach.
+
+OGRANICZENIE WERYFIKACJI
+Nie wykonano renderowania stron PL/EN w przeglądarce na desktopie i mobile
+ani testów konsoli i interakcji: środowisko blokowało lokalny podgląd,
+a instalacja Chromium nie była dostępna. Kontrola kodu i plików zakończona,
+ale pełny test przeglądarkowy przed publikacją pozostaje do wykonania.
+
+ŹRÓDŁA
+https://play.google.com/store/apps/details?id=com.weartools.phonebattcomp
+https://amoledwatchfaces.com/bogo (wyłącznie inspiracja wyjaśnienia mechanizmu)
+Treść funkcji CV07 oparta na załączonych materiałach; bez obietnic animacji,
+liczby komplikacji lub innych funkcji, których same materiały nie potwierdzają.

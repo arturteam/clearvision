@@ -1,0 +1,46 @@
+/* Product pages use Clear Vision's existing colors, typography and components. */
+.product-breadcrumb { padding-top: 30px; color: var(--gray); font-size: 14px; }
+.product-breadcrumb a { color: var(--blue-light); text-decoration: none; }
+.product-lead { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 50px; padding: 44px 0 54px; }
+.product-copy { min-width: 0; }
+.product-copy h1 { margin: 0; font-size: clamp(44px,6vw,80px); line-height: 1.05; letter-spacing: -.045em; }
+.product-tagline { color: var(--blue-light); font-size: clamp(21px,2.5vw,28px); font-weight: 700; line-height: 1.4; }
+.product-intro { color: var(--gray); font-size: 18px; line-height: 1.8; }
+.product-visual { overflow: hidden; border: 1px solid var(--border); border-radius: 30px; background: #000; }
+.product-visual img { width: 100%; height: auto; }
+.product-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 25px; }
+.product-actions .text-link { margin-top: 0; }
+.product-actions .status-badge { white-space: normal; }
+.product-tabs { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 22px 0; border-block: 1px solid var(--border); }
+.product-tabs a { color: var(--blue-light); font-size: 15px; font-weight: 800; text-decoration: none; }
+.product-section { margin-top: 64px; scroll-margin-top: 180px; }
+.product-section h2, .product-offer h2 { margin: 0 0 22px; font-size: clamp(27px,3.6vw,42px); line-height: 1.2; letter-spacing: -.025em; }
+.product-section p, .product-section li, .product-offer p { color: var(--gray); font-size: 17px; line-height: 1.8; }
+.product-section li + li { margin-top: 12px; }
+.product-section ul, .product-section ol { padding-left: 24px; }
+.product-features-panel { padding: 32px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface); }
+.product-features-panel ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 52px; row-gap: 14px; margin-bottom: 0; }
+.product-features-panel li + li { margin-top: 0; }
+.product-reading { max-width: 880px; margin-inline: auto; }
+.product-section .section-heading { margin-bottom: 30px; }
+.product-note { font-size: 14px !important; }
+.product-faq details { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.product-faq summary { cursor: pointer; font-size: 18px; font-weight: 800; }
+.product-faq details p { margin-bottom: 0; }
+.product-offer { margin-top: 64px; padding: 32px; border: 1px solid rgba(31,107,255,.4); border-radius: 24px; background: rgba(31,107,255,.07); }
+.product-offer .text-link + .text-link { margin-left: 24px; }
+.product-bottom { margin-block: 54px 90px; }
+@media (max-width: 850px) {
+ .product-lead { grid-template-columns: 1fr; gap: 28px; }
+ .product-visual { width: min(100%,480px); margin-inline: auto; }
+ .product-features-panel ul { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+ .product-lead { padding-top: 30px; }
+ .product-section { margin-top: 44px; scroll-margin-top: 225px; }
+ .product-features-panel, .product-offer { padding: 24px; }
+ .product-actions { align-items: stretch; flex-direction: column; }
+ .product-actions .button { padding: 14px 18px; text-align: center; }
+ .product-offer .text-link { display: block; }
+ .product-offer .text-link + .text-link { margin-left: 0; }
+}

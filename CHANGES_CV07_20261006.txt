@@ -1,0 +1,22 @@
+Clear Vision Watch Faces website update – CV07 / BOGO / companion app
+
+Updated:
+- Added a separate, prominent BOGO section directly under the hero banner (EN + PL).
+- BOGO flow: buy CV06 or CV07 -> choose CV02/CV03/CV05 -> email receipt + selected face -> receive and redeem promo code.
+- Added promotion terms: one code per qualifying purchase, codes limited, CV06/CV07 not claimable as the free face.
+- Added a dedicated Phone Battery Complication section (EN + PL) near the top of the homepage.
+- Added the official Google Play download link for Phone Battery Complication.
+- Added full step-by-step installation/configuration instructions for phone + Wear OS watch.
+- Clarified that Phone Battery Complication is required for extra complication providers/options, while the watch face itself works without it.
+- Updated Guide and FAQ (EN + PL) with Phone Battery and BOGO information.
+- Rebuilt all CV07 gallery images so the supplied Wear OS screenshots are inserted into the same watch mockup style used by CV06.
+- CV07 gallery order standardized: main -> AOD -> white glow -> clean -> red -> blue -> green -> yellow.
+- Kept the supplied CV07 product-card image for the main product tile.
+- Added BOGO navigation link and BOGO badges on CV06/CV07 product cards.
+- Removed the old small BOGO/Phone Battery support cards because both now have dedicated sections.
+
+Official Phone Battery Complication Google Play link:
+https://play.google.com/store/apps/details?id=com.weartools.phonebattcomp
+
+BOGO contact:
+arturteam1@gmail.com
