@@ -1,0 +1,32 @@
+/* Shared social and store section. Styles scoped to this component. */
+.community-section { padding: 0 0 56px; scroll-margin-top: 110px; }
+.community-section #telegram { scroll-margin-top: 110px; }
+.community-heading { margin-bottom: 24px; }
+.community-heading h2 { margin: 0; font-size: clamp(28px,3.2vw,38px); line-height: 1.15; letter-spacing: -.035em; }
+.community-heading p { margin: 12px 0 0; color: var(--gray); font-size: 16px; }
+.community-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.community-card { display: flex; flex-direction: column; align-items: flex-start; padding: 24px; border: 1px solid var(--border); border-radius: 20px; background: linear-gradient(145deg,#151922,#0d0f14); min-width: 0; }
+.community-card-featured { border-color: rgba(105,160,255,.6); background: linear-gradient(145deg,#112752,#101621); }
+.community-icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 12px; background: rgba(105,160,255,.09); color: var(--blue-light); }
+.community-card-featured .community-icon { background: rgba(31,107,255,.22); color: #93baff; }
+.community-card h3 { font-size: 21px; margin: 18px 0 8px; line-height: 1.25; }
+.community-card p { margin: 0 0 24px; color: var(--gray); font-size: 14px; line-height: 1.65; }
+.community-card .button { width: 100%; min-height: 46px; padding: 10px 12px; margin-top: auto; font-size: 11px; line-height: 1.4; text-align: center; }
+.community-card .button-primary { background: #175ce0; box-shadow: 0 8px 24px rgba(31,107,255,.2); }
+.community-card .button-secondary { color: #c6cbd5; box-shadow: none; }
+.community-card a:focus-visible { outline: 3px solid #9dc0ff; outline-offset: 4px; }
+@media(max-width:1000px) { .community-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:560px) {
+ .community-section { padding-bottom: 32px; }
+ .community-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+ .community-card { padding: 22px; display:grid; grid-template-columns: 46px minmax(0,1fr); column-gap: 16px; align-items: center; }
+ .community-card h3 { margin: 0; }
+ .community-card p { grid-column: 1/-1; margin: 16px 0 18px; }
+ .community-card .button { grid-column: 1/-1; min-height: 48px; }
+}
+@media(prefers-reduced-motion:reduce) { .community-card .button { transition:none; } .community-card .button:hover { transform:none; } }
+
+.community-card-upcoming { border-style: dashed; background: rgba(255,255,255,.015); }
+.community-card-upcoming .community-icon { color: #aeb4bf; background: rgba(255,255,255,.04); }
+.community-coming { display: flex; align-items: center; justify-content: center; min-height: 46px; width:100%; margin-top:auto; padding:10px 12px; border:1px dashed rgba(255,255,255,.15); border-radius:12px; color:#aeb4bf; font-size:11px; font-weight:800; letter-spacing:.06em; }
+@media(max-width:560px) { .community-coming { grid-column:1/-1; min-height:48px; } }
