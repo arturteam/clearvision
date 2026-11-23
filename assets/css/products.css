@@ -44,3 +44,5 @@
  .product-offer .text-link { display: block; }
  .product-offer .text-link + .text-link { margin-left: 0; }
 }
+
+.product-actions .bogo-purchase-note{max-width:100%;margin:0;font-size:14px;line-height:1.6;color:var(--gray);overflow-wrap:anywhere}

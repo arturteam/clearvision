@@ -398,3 +398,6 @@ button { font: inherit; }
 @media (max-width: 600px) {
  .gallery-group-heading .product-detail-link { flex-basis: 100%; margin-left: 0; }
 }
+
+/* Separate promotion instructions; stacked, readable copy on small screens. */
+.bogo-purchase-note{display:block;flex-basis:100%;font-size:14px;line-height:1.6;color:var(--gray);margin:8px 0 16px;overflow-wrap:anywhere}.bogo-instructions{margin-top:32px;max-width:850px}.bogo-instructions details{padding:16px 0;border-bottom:1px solid var(--border)}.bogo-instructions summary{cursor:pointer;font-size:17px;font-weight:700}.bogo-instructions p,.giveaway-section p{font-size:16px;line-height:1.7;overflow-wrap:anywhere}.giveaway-section{border-block:1px solid var(--border)}#giveaway{scroll-margin-top:100px}.giveaway-section .button{white-space:normal;text-align:center}@media(max-width:650px){.giveaway-section .button{width:100%}}
