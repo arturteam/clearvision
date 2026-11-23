@@ -7,3 +7,6 @@ fieldset{min-width:0}#verification{max-width:100%}header nav{flex-wrap:wrap}butt
 #bogo-wait[hidden]{display:none}#bogo-countdown{display:block;font-size:clamp(28px,6vw,40px);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:2px;color:#f3f6ff}#bogo-wait-hint{font-size:14px}
 
 .bogo-instructions{margin-top:28px}.bogo-instructions p{font-size:16px;line-height:1.7;overflow-wrap:anywhere}
+
+/* Make the BOGO response visible and easy to find after submitting. */
+#message{font-size:clamp(18px,2.2vw,21px);font-weight:700;line-height:1.55;padding:22px 24px;border:2px solid #7bb0ff;border-left-width:6px;background:#152e50;box-shadow:0 8px 28px rgba(0,0,0,.24);scroll-margin-block:24px;overflow-wrap:anywhere}#message:focus{outline:3px solid #b4d2ff;outline-offset:4px}@media(max-width:650px){#message{padding:18px;font-size:18px}}

@@ -24,7 +24,7 @@ const msg={
  storage:pl?'Aby bezpiecznie odebrać i odzyskać kod, zezwól tej witrynie na zapis danych w przeglądarce.':'Allow this website to store browser data so you can safely claim and recover your code.'
 };
 let widget=null,token='',busy=false,currentCode='',waitTimer=null,waitState=null,countdownComplete=false;
-const tell=s=>{$('#message').textContent=s};
+const tell=(s,reveal=true)=>{const message=$('#message');message.textContent=s;message.tabIndex=-1;if(reveal){message.focus({preventScroll:true});message.scrollIntoView?.({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth',block:'center'});}};
 function update(){$('#submit').disabled=busy||!!waitState||(!token&&!countdownComplete)}
 function clearWait(){if(waitTimer!==null)clearInterval(waitTimer);waitTimer=null;waitState=null;countdownComplete=false;$('#bogo-wait').hidden=true;update()}
 function showWait(d){
@@ -63,7 +63,7 @@ $('#bogo-form').addEventListener('submit',async e=>{
  if(!token){tell(msg.verification_failed);return}
  const order=$('#order').value.trim(),purchasedModel=$('#purchased').value,model=$('input[name="gift"]:checked')?.value;
  if(!/^GPA\.[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{5}$/.test(order)||!['CV06','CV07'].includes(purchasedModel)||!names[model]){tell(msg.invalid_request);return}
- busy=true;$('#bogo-form fieldset').disabled=true;$('#purchased').disabled=true;$('#order').disabled=true;$('#result').hidden=true;currentCode='';update();tell(pl?'Sprawdzamy zakup w Google Play…':'Verifying your Google Play purchase…');
+ busy=true;$('#bogo-form fieldset').disabled=true;$('#purchased').disabled=true;$('#order').disabled=true;$('#result').hidden=true;currentCode='';update();tell(pl?'Sprawdzamy zakup w Google Play…':'Verifying your Google Play purchase…',false);
  try{
   let recovery;try{recovery=await identity(purchasedModel,order)}catch{throw Error('storage')}
   const r=await fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({purchasedModel,model,orderId:order,recovery,requestId:random(),turnstile:token}),signal:AbortSignal.timeout(60000)});
@@ -72,7 +72,7 @@ $('#bogo-form').addEventListener('submit',async e=>{
   if(!r.ok||d?.ok!==true)throw Error(typeof d?.error==='string'?d.error:'temporarily_unavailable');
   if(!names[d.model]||typeof d.code!=='string'||!d.code||d.code.length>500)throw Error('temporarily_unavailable');
   clearWait();currentCode=d.code;$('#code').textContent=d.code;$('#gift-name').textContent=names[d.model];$('#result').hidden=false;$('#result').focus();
-  tell(d.replayed?(pl?'Odzyskano wcześniej przydzielony kod. Nie wydano kolejnego. Zrealizuj go do 31.01.2027.':'Your previous code has been recovered. No additional code was issued. Redeem it by 31 January 2027.'):(pl?'Zakup potwierdzony. Twój kod jest gotowy. Zrealizuj go do 31.01.2027.':'Purchase verified. Your code is ready. Redeem it by 31 January 2027.'));
+  tell(d.replayed?(pl?'Odzyskano wcześniej przydzielony kod. Nie wydano kolejnego. Zrealizuj go do 31.01.2027.':'Your previous code has been recovered. No additional code was issued. Redeem it by 31 January 2027.'):(pl?'Zakup potwierdzony. Twój kod jest gotowy. Zrealizuj go do 31.01.2027.':'Purchase verified. Your code is ready. Redeem it by 31 January 2027.'),false);$('#result').scrollIntoView?.({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth',block:'center'},false);$('#result').scrollIntoView?.({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth',block:'center'});
   analytics(d.replayed?'bogo_recover':'bogo_claim',d.model);
  }catch(err){tell(msg[err.message]||msg.temporarily_unavailable)}
  finally{busy=false;token='';$('#bogo-form fieldset').disabled=false;$('#purchased').disabled=false;$('#order').disabled=false;try{if(widget!==null)turnstile.reset(widget)}catch{}update()}
