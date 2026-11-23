@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://challenges.cloudflare.com; style-src 'unsafe-inline'; frame-src https://challenges.cloudflare.com; connect-src https://challenges.cloudflare.com https://clearvision-giveaway-prod.arturteam1.workers.dev; worker-src blob:; base-uri 'none'; form-action 'none'">
+<title>Clear Vision — test Turnstile</title>
+<style>body{max-width:620px;margin:32px auto;padding:20px;background:#080c13;color:#f3f6ff;font:18px/1.6 system-ui}button{padding:14px 20px;font:inherit;background:#2469f3;color:white;border:0;border-radius:8px;cursor:pointer}button:disabled{opacity:.5}li{padding:8px 0}#widget{margin:24px 0;min-height:70px}a{color:#91b6ff}</style></head>
+<body><h1>Test Turnstile BOGO</h1><p>Ten test nie wydaje kodów i nie sprawdza zakupów. Nie wpisujesz żadnych sekretów, tokenów ani numeru zamówienia.</p>
+<p>Kliknij „Rozpocznij”. Cloudflare może poprosić o potwierdzenie. Test wygaśnięcia trwa około 5 minut i 10 sekund; pozostaw tę kartę otwartą.</p>
+<button id="start">Rozpocznij test</button><div id="widget"></div><p id="message" role="status" aria-live="polite">Diagnostyka musi zostać osobno zatwierdzona i udostępniona.</p>
+<ol><li id="EMPTY">Pusty token: oczekuje</li><li id="FRESH">Świeży token: oczekuje</li><li id="REUSED">Ponowne użycie: oczekuje</li><li id="EXPIRED">Wygaśnięcie: oczekuje</li></ol>
+<p>Wynik pokazuje tylko PASS/FAIL. Tokeny pozostają w pamięci i są wysyłane wyłącznie do weryfikatora Turnstile.</p><a href="../">Powrót do Clear Vision</a>
+<script src="check.js" defer></script></body></html>
